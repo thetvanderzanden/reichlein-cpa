@@ -186,19 +186,11 @@
 
     /* HERO */
     .hero {
-      min-height: 100vh;
+      min-height: 75vh;
       display: flex; align-items: center;
-      background: #efefef url('header-texture.png') center top repeat;
+      background: linear-gradient(135deg, #203215 0%, #2D3719 50%, #646A27 100%);
       padding: 100px 5% 60px;
       position: relative; overflow: hidden;
-    }
-
-    /* Navy overlay on top of the grey textured background (matches the
-       original site's dark banner box sitting on its grey page background) */
-    .hero::before {
-      content: '';
-      position: absolute; inset: 0;
-      background: linear-gradient(135deg, rgba(32,50,21,0.95) 0%, rgba(45,55,25,0.9) 50%, rgba(100,106,39,0.55) 100%);
     }
 
     .hero-inner {
